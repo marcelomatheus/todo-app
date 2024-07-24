@@ -18,7 +18,7 @@ export default function Home() {
           <li>
             Get started by editing <code>app/page.tsx</code>
           </li>
-          <li>Save and see your changes instantly.</li>
+          <li>Save</li>
         </ol>
 
         <div className={styles.ctas}>
@@ -35,7 +35,7 @@ export default function Home() {
               width={20}
               height={20}
             />
-            Deploy now
+            Deploy
           </a>
           <a
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -47,7 +47,7 @@ export default function Home() {
           </a>
         </div>
         <Button appName="docs" className={styles.secondary}>
-          Open alert
+          Open
         </Button>
       </main>
       <footer className={styles.footer}>

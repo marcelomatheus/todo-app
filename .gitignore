@@ -1,12 +1,19 @@
-.DS_Store
+# VS Code
+.vscode
+
+# Workspaces
 node_modules
+
+# Cached folders
 .turbo
-*.log
 .next
+
+# Build dirs
 dist
+
+.DS_Store
+*.log
 dist-ssr
 *.local
 .env
 .cache
-server/dist
-public/dist

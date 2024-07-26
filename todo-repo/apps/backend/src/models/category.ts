@@ -1,7 +1,9 @@
-let categorySchema = new mongoose.Schema({
+let mongooseCategory = require('mongoose') 
+
+let categorySchema = new mongooseCategory.Schema({
     id: Number,
     name: String,
     iconUrl: String
 })
 
-module.exports = mongoose.model('Category', categorySchema)
+module.exports = mongooseCategory.model('Category', categorySchema)

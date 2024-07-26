@@ -1,4 +1,3 @@
-
 let mongoose = require('mongoose');
 require('dotenv').config()
 import "dotenv/config"
@@ -8,10 +7,7 @@ export default function connectDB(){
     const password = process.env.DB_PASSWORD;
     const uri = `mongodb+srv://${user}:${password}@clustertodo.i8gccsr.mongodb.net/?retryWrites=true&w=majority&appName=ClusterToDo`
     try{
-    mongoose.connect(uri,{
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    })
+    mongoose.connect(uri)
     .then(()=>{
         console.log("Database connected");
     })}

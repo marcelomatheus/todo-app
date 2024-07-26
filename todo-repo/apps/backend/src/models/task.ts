@@ -1,7 +1,6 @@
-let mongoose = require('mongoose')
-let validator = require('validator')
+let mongooseTask = require('mongoose') 
 
-let taskSchema = new mongoose.Schema({
+let taskSchema = new mongooseTask.Schema({
     id: Number,
     name: String,
     category: String,
@@ -10,4 +9,4 @@ let taskSchema = new mongoose.Schema({
     status: String
 })
 
-module.exports = mongoose.model('Task', taskSchema)
+module.exports = mongooseTask.model('Task', taskSchema)

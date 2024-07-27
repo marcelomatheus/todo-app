@@ -1,27 +1,37 @@
-# Turborepo kitchen sink starter
+# ToDo List
+APP of tasks manager with login and valitadion in react and express based in Turborepo kitchen sink for put server and web app in single repository.
 
-This is an official starter Turborepo with multiple meta-frameworks all working in harmony and sharing packages.
 
-This example also shows how to use [Workspace Configurations](https://turbo.build/repo/docs/core-concepts/monorepos/configuring-workspaces).
+## Dependencies and tools
+### Backend
+- `mongoDB` ^6.8.0
+- `mongoose` ^8.5.1
+- `morgan` ^1.10.0
+- `express` ^4.18.3
+- `cors` ^2.8.5
+- `typescript` ^5.3.3
 
-## Using this example
+### Frontend
+- `react` 18.2.0
+- `react-dom` 18.2.0
+- `vite` 5.1.4
 
-Run the following command:
+## Getting run
 
+node_modules instalation command>
 ```sh
-npx create-turbo@latest -e kitchen-sink
+pnpm intall
 ```
 
-## What's inside?
-
-This Turborepo includes the following packages and apps:
+Run the following command:
+```sh
+pnpm dev
+```
 
 ### Apps and Packages
 
-- `api`: an [Express](https://expressjs.com/) server
-- `storefront`: a [Next.js](https://nextjs.org/) app
-- `admin`: a [Vite](https://vitejs.dev/) single page app
-- `blog`: a [Remix](https://remix.run/) blog
+- `web`: a frontend app
+- `server`: a backend app
 - `@repo/eslint-config`: ESLint configurations used throughout the monorepo
 - `@repo/jest-presets`: Jest configurations
 - `@repo/logger`: isomorphic logger (a small wrapper around console.log)
@@ -30,11 +40,3 @@ This Turborepo includes the following packages and apps:
 
 Each package and app is 100% [TypeScript](https://www.typescriptlang.org/).
 
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Jest](https://jestjs.io) test runner for all things JavaScript
-- [Prettier](https://prettier.io) for code formatting

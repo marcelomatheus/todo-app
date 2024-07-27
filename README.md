@@ -1,5 +1,5 @@
-# ToDo List
-APP of tasks manager with login and valitadion in react and express based in Turborepo kitchen sink for put server and web app in single repository.
+# ToDo App
+Tasks manager app with login and validation in react and express based in Turborepo kitchen sink for put server and web app together in single repository.
 
 
 ## Dependencies and tools

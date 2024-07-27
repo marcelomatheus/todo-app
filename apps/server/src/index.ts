@@ -1,4 +1,3 @@
-import { log } from "@repo/logger";
 import { createServer } from "./server";
 import connectDB from "./database";
 
@@ -12,7 +11,7 @@ server.use(categoryRoutes)
 server.use(taskRoutes)
 
 server.listen(port, () => {
-  log(`api running on ${port}`);
+  console.log(`api running on ${port}`);
 });
 
 server.get('/',(req,res)=>{

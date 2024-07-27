@@ -1,7 +1,4 @@
-import { error } from "console";
 import express, { type Express } from "express";
-import { ObjectId } from "mongodb";
-import { Document } from "mongoose";
 const router = express.Router()
 const Task = require('../models/task')
 
@@ -41,10 +38,15 @@ router.put('/task/:id', (req,res)=>{
 
 router.get('/task/:id', async (req,res)=>{
     const id = req.params.id;
-
-  // check if user exists
-  const task = await Task.findById(id);
-  res.json(task);
+  if(id){
+    try{
+    const task = await Task.findById(id);
+    res.json(task);
+    }catch(err){
+        res.json(err)
+    }
+  }
+  
 
 })
 module.exports = router;

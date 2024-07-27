@@ -4,12 +4,12 @@ APP of tasks manager with login and valitadion in react and express based in Tur
 
 ## Dependencies and tools
 ### Backend
-- `mongoDB` ^6.8.0
-- `mongoose` ^8.5.1
-- `morgan` ^1.10.0
-- `express` ^4.18.3
-- `cors` ^2.8.5
-- `typescript` ^5.3.3
+- `mongoDB` 6.8.0
+- `mongoose` 8.5.1
+- `morgan` 1.10.0
+- `express` 4.18.3
+- `cors` 2.8.5
+- `typescript` 5.3.3
 
 ### Frontend
 - `react` 18.2.0
@@ -18,7 +18,7 @@ APP of tasks manager with login and valitadion in react and express based in Tur
 
 ## Getting run
 
-node_modules instalation command>
+Do node_modules installation by command:
 ```sh
 pnpm intall
 ```

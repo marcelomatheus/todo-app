@@ -1,0 +1,46 @@
+.container{
+    width: 100%;
+}
+    
+.sideBar{
+    width: 20%;
+    position: fixed;
+    height: 100%;
+    margin-top: 0;
+    overflow: hidden;
+    box-shadow: 1px 1px 6px -2px black;  
+}
+
+.imageLogo{
+    background: url("../../assets/images/ToDo_logo.png"), white;
+    background-size: 40px;
+    display: block;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.sideBar ul{
+    margin: 0;
+    padding: 25px;
+}
+.sideBar ul li{
+    list-style: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.link{
+    font-style: normal;
+    text-decoration: none;
+}
+
+.icon{
+    font-size: 1.5em  ;
+    margin-right: 10px;
+}
+
+.textIcon{
+    font-weight: 600;
+}

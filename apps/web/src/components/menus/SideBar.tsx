@@ -1,19 +1,23 @@
 import React from "react";
 import {Link, Outlet} from "react-router-dom"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import { faList } from '@fortawesome/free-solid-svg-icons'
+import '../modules/SideBar.modules.css'
 
 function SideBar(){
     
     return(
-    <>
-        <nav>
+    <div className="container">
+        <nav className="sideBar">
             <ul>
-                <li><img src="../../assets/images/ToDo_logo.png"></img></li>
-                <li><Link to="/">Lista de tarefas</Link></li>
-                <li><Link to="/create-task">Criar tarefa</Link></li>
+                <li><span className="imageLogo"></span></li>
+                <li><Link className="link" to="/"><FontAwesomeIcon className="icon" icon={faList} /><span className="textIcon"><strong>TAREFAS</strong></span></Link></li>
+                <li><Link className="link" to="/create-task"><FontAwesomeIcon className="icon" icon={faPlus} /><span className="textIcon"><strong>CRIAR TAREFA</strong></span></Link></li>
             </ul>
         </nav>
         <Outlet />
-    </>
+    </div>
     )
 }
 

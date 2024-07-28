@@ -1,0 +1,16 @@
+.content{
+    width: 85%;
+}
+
+.containerContent{
+    width: 100%;
+    display: flex;
+    border: 1px solid red;
+}
+
+.tasksArea{
+    padding: 5% 5% 5% 5%;
+    width: 100%;
+    border: 1px solid green;
+    margin-left: 20%;
+}

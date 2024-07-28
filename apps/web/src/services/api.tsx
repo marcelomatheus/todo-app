@@ -1,30 +1,42 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Axios from "axios";
+import BoxTask from "../components/box/BoxTask"
 
 const api = Axios.create({
     baseURL: 'http://localhost:5001/'
 });
 
-function getAllTasks(){
-    const [tasks,setTasks] = useState([]);
+interface TaskProp{
+    _id: string;
+    name: string;
+}
 
+function getAllTasks(){
+    const [tasks,setTasks] = useState([{}]);
+    const [id, setId] = useState({});
     try{
+    useEffect(()=>{
     api.get("/task")
     .then((response) => {
         const data = response.data;
         setTasks(data);
-    })
+    });
+    },[])
     }catch(err){
         return (
             <div>Api not connected</div>
         )
     }
+
+    async function handleClickId(_id:string){
+        setId(_id);
+        await api
+        .delete(`/task/${id}`)
+        .then((response)=>console.log(response));
+    }
+
     return(
-        <ul>
-            {tasks.map((item,index)=>
-            <li key={index}>{item._id}</li>
-            )}
-        </ul>
+        <BoxTask onClick={handleClickId} tasks={tasks}/>
     )
 }
 

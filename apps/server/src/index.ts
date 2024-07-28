@@ -15,5 +15,5 @@ server.listen(port, () => {
 });
 
 server.get('/',(req,res)=>{
-  res.send()
+  res.send('Connected')
 })
